@@ -1,0 +1,5 @@
+Pods/
+vendor/
+*/xcuserdata/*
+*xcuserdatad/*
+*/xcshareddata/*

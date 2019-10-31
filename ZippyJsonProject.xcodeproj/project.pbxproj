@@ -13,9 +13,12 @@
 		D0773A42236B9A820066C2A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0773A40236B9A820066C2A8 /* Main.storyboard */; };
 		D0773A44236B9A830066C2A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0773A43236B9A830066C2A8 /* Assets.xcassets */; };
 		D0773A47236B9A830066C2A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0773A45236B9A830066C2A8 /* LaunchScreen.storyboard */; };
+		F697F412D1463B04DC1BBA3E /* Pods_ZippyJsonProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E35C6AAEC1C1790531E2DDCE /* Pods_ZippyJsonProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81D1EA5F443229843EA33630 /* Pods-ZippyJsonProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZippyJsonProject.release.xcconfig"; path = "Target Support Files/Pods-ZippyJsonProject/Pods-ZippyJsonProject.release.xcconfig"; sourceTree = "<group>"; };
+		BBF4B3EE7ACCD32D56C1FFC2 /* Pods-ZippyJsonProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZippyJsonProject.debug.xcconfig"; path = "Target Support Files/Pods-ZippyJsonProject/Pods-ZippyJsonProject.debug.xcconfig"; sourceTree = "<group>"; };
 		D0773A37236B9A820066C2A8 /* ZippyJsonProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZippyJsonProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0773A3A236B9A820066C2A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0773A3C236B9A820066C2A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		D0773A43236B9A830066C2A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0773A46236B9A830066C2A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0773A48236B9A830066C2A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E35C6AAEC1C1790531E2DDCE /* Pods_ZippyJsonProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZippyJsonProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F697F412D1463B04DC1BBA3E /* Pods_ZippyJsonProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		301A83F3B31D1681406B246D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBF4B3EE7ACCD32D56C1FFC2 /* Pods-ZippyJsonProject.debug.xcconfig */,
+				81D1EA5F443229843EA33630 /* Pods-ZippyJsonProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D0773A2E236B9A820066C2A8 = {
 			isa = PBXGroup;
 			children = (
 				D0773A39236B9A820066C2A8 /* ZippyJsonProject */,
 				D0773A38236B9A820066C2A8 /* Products */,
+				301A83F3B31D1681406B246D /* Pods */,
+				FBB970BB7C3729689972A1D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = ZippyJsonProject;
 			sourceTree = "<group>";
 		};
+		FBB970BB7C3729689972A1D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E35C6AAEC1C1790531E2DDCE /* Pods_ZippyJsonProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0773A4B236B9A830066C2A8 /* Build configuration list for PBXNativeTarget "ZippyJsonProject" */;
 			buildPhases = (
+				F037409E3BDCFA50C03D3052 /* [CP] Check Pods Manifest.lock */,
 				D0773A33236B9A820066C2A8 /* Sources */,
 				D0773A34236B9A820066C2A8 /* Frameworks */,
 				D0773A35236B9A820066C2A8 /* Resources */,
+				192FAF35DC8BBD1EB8D69F43 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		192FAF35DC8BBD1EB8D69F43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZippyJsonProject/Pods-ZippyJsonProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZippyJsonProject/Pods-ZippyJsonProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZippyJsonProject/Pods-ZippyJsonProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F037409E3BDCFA50C03D3052 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZippyJsonProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0773A33236B9A820066C2A8 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		D0773A4C236B9A830066C2A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBF4B3EE7ACCD32D56C1FFC2 /* Pods-ZippyJsonProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		D0773A4D236B9A830066C2A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81D1EA5F443229843EA33630 /* Pods-ZippyJsonProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

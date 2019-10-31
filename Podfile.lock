@@ -1,0 +1,24 @@
+PODS:
+  - JJLISO8601DateFormatter (0.1.2)
+  - ZippyJSON (0.0.5):
+    - JJLISO8601DateFormatter (~> 0.1.2)
+    - ZippyJSONCFamily (~> 0.0.2)
+  - ZippyJSONCFamily (0.0.2)
+
+DEPENDENCIES:
+  - ZippyJSON
+
+SPEC REPOS:
+  https://cdn.cocoapods.org/:
+    - JJLISO8601DateFormatter
+    - ZippyJSON
+    - ZippyJSONCFamily
+
+SPEC CHECKSUMS:
+  JJLISO8601DateFormatter: 06a216365f6c8b0ec33a6ce3750d496f048efb32
+  ZippyJSON: d7e50fa59732258fc9ca29c20cab8ca8d8f5ab64
+  ZippyJSONCFamily: 7cb977c1ba6bffb30bd6b0467dc876851ab2a7c1
+
+PODFILE CHECKSUM: 26fb9d5fa63847920f531d23c215911838cefca9
+
+COCOAPODS: 1.8.4
